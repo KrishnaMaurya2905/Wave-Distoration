@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+   
+  }
+
+::selection{
+  background: transparent;
+}
+@font-face {
+  font-family: "Monster";
+  font-weight: 400;
+  src: url("/Green_Energy.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Defused";
+  font-weight: 400;
+  src: url("src/assets/Defused Extended Bold 700.ttf") format('truetype');
+}
+
+
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    pointer-events: none;
+    font-family: 'Monster';
+} 
+
+
+
+.glass{
+  background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.demo-2 {
+  width: 100%; /* or any specific width */
+  height: 100%; /* or any specific height */
+  position: relative; /* Ensure positioning is correct */
+}
+
+
+/* Add this CSS to your stylesheet or a CSS module */
+
+/* Add this CSS to your stylesheet or a CSS module */
+
+.border-effect {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3ae114; /* Adjust color to match your design */
+}
+
+.border-effect.top-0.left-0 {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.border-effect.top-0.right-0 {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.border-effect.bottom-0.left-0 {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.border-effect.bottom-0.right-0 {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.barcode {
+  width: 200px; /* Adjust width to match your design */
+  height: 40px; /* Adjust height to match your design */
+  background: repeating-linear-gradient(
+    90deg,
+    #fff,
+    #fff 2px,
+    #000 2px,
+    #000 4px
+  );
+}
